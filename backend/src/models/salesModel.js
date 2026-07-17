@@ -8,7 +8,7 @@
 */
 
 import mongoose, { Schema, model } from "mongoose"
-import clientsModel from "./clientsModel";
+import clientsModel from "./clientsModel.js";
 
 const salesModel = new Schema({
     customerId: {

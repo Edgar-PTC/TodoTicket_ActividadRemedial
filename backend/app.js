@@ -5,6 +5,7 @@ import logInClientsRoute from "./src/routes/logInClientsRoute.js";
 import logOutRoute from "./src/routes/logOutRoutes.js";
 import registerAdminRoute from "./src/routes/registerAdminsRoute.js";
 import registerClientRoute from "./src/routes/registerClientsRoute.js";
+import salesRoute from "./src/routes/salesRoute.js";
 import wompiRoute from "./src/routes/wompiRoute.js";
 
 import cookieParser from "cookie-parser";
@@ -31,6 +32,7 @@ app.use("/api/logInClient", logInClientsRoute);
 app.use("/api/logOut", logOutRoute);
 app.use("/api/registerAdmin", registerAdminRoute);
 app.use("/api/registerClient", registerClientRoute);
+app.use("/api/sales", salesRoute);
 app.use("/api/wompi", wompiRoute);
 
 export default app;
